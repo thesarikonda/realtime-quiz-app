@@ -1,0 +1,100 @@
+/* ================= FULL SCREEN RESET ================= */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= BASE THEME ================= */
+body {
+  background-color: #f8f9fa; /* Light background */
+  color: #212529;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  min-height: 64px;
+  background-color: #ffffff !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #0d6efd !important; /* Royal Blue */
+}
+
+/* ================= SEARCH ================= */
+.form-control {
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown-menu {
+  border-radius: 12px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f5ff;
+  color: #0d6efd;
+}
+
+/* ================= CARDS ================= */
+.card {
+  border-radius: 18px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card.shadow-lg {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* ================= CARD CONTENT ================= */
+.card-title {
+  color: #0d6efd;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+/* ================= ICON SIZE ================= */
+.display-4 {
+  font-size: 3rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+
