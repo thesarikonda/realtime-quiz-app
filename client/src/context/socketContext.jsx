@@ -12,7 +12,9 @@ export const SocketProvider = ({children}) => {
             reconnection:true
         });
         setSocket(s);
-        return () => s.disconnect();
+        return () => {
+            
+        };
 
     },[]);
 
