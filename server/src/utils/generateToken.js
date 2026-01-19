@@ -10,7 +10,7 @@ const generateTokenAndSetCookie = (userId, res) => {
         httpOnly : true, // prevent XSS
         secure:true,
         sameSite : "None", //  
-        secure: process.env.NODE_ENV !== 'development',
+        
     });
 
 }
