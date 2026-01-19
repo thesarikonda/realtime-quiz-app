@@ -200,11 +200,12 @@ import { Server } from "socket.io";
 import jwt from "jsonwebtoken";
 
 const setupSocket = (server) => {
+  const allowedOrigin = process.env.CLIENT_URL?.replace(/\/$/, "");
   const rooms = {};
 
   const io = new Server(server, {
     cors: {
-      origin: process.env.CLIENT_URL,
+      origin: allowedOrigin,
       methods: ["GET", "POST"],
       credentials: true,
     },
